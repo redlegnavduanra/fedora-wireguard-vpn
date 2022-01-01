@@ -41,6 +41,14 @@ wg genpsk > peer1presharedkey
 
 ### Create Server wireguard configuration
 
+Create a wg0.conf file in /etc/wireguard:
+
+```bash
+vi /etc/wireguard/wg0.conf
+```
+
+Add the generated keys to the following configuration and save it to the wg.conf file.
+
 ```ini
 [Interface]
 Address = 10.0.0.1/24
