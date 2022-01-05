@@ -1,4 +1,4 @@
-# Fedora Wireguard VPN
+# Fedora 32 Wireguard VPN
 
 This document intends to create some documentation on my own experiences and thoughts regarding setting up a Wiregaurd VPN on a Fedora Server VM.
 This project initially had three important goals:
@@ -13,7 +13,7 @@ The solution I want to achieve is drafted in the following image:
 
 ![VPN solution](./images/Wireguard-VPN.png)
 
-## Setup
+## Server setup
 
 ### Run as root
 
@@ -104,6 +104,9 @@ systemctl start wg-quick@wg0
 ### Port forward on route
 
 Create a port-forward on the router for port 51820 to the IP of the VPN server, so that you can reach your VPN server from the internet.
+
+
+## Client setup
 
 ## Useful Links
 
